@@ -7,16 +7,23 @@
  padding: 20px;
  overflow-x: scroll;
  overflow-y: hidden;
+ cursor: pointer;
+ -webkit-overflow-scrolling: touch;
 
 }
 
 .poster{
      max-height: 300px;
     margin-right:10px;
-    max-width: 250px;
+    max-width: 350px;
+    object-fit: contain;
+    transition: transform 450ms;
     
    
 }
+.poster:hover {
+    transform: scale(1.09);
+  }
 .posters::-webkit-scrollbar{
     display: none;
 }
@@ -24,3 +31,7 @@
     max-height: 200px;
     margin-right: 10px;
 }
+.smallposter:hover {
+    transform: scale(1.15);
+  }
+ 

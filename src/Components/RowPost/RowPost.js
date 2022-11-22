@@ -28,6 +28,7 @@ function RowPost(props) {
   
     
  }
+ console.log("its running")
  
 
   
@@ -67,7 +68,7 @@ function RowPost(props) {
       
       
     </div>
-    <ReactPlayer width='100' url={ytmovie}></ReactPlayer>
+    {ytmovie && <ReactPlayer playing='true' width='100' url={ytmovie}></ReactPlayer>}
     </>
   );
 }
